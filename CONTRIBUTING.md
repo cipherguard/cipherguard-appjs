@@ -116,12 +116,12 @@ composer require --dev "cakephp/cakephp-codesniffer=1.*"
 
 Then let phpcs where to find the cakephp sniffs
 ```
-Vendor/bin/phpcs --config-set installed_paths Vendor/cakephp/cakephp-codesniffer
+vendor/bin/phpcs --config-set installed_paths vendor/cakephp/cakephp-codesniffer
 ```
 
 The you can run it like follow:
 ```
-Vendor/bin/phpcs --standard=CakePHP app/path/to/something
+vendor/bin/phpcs --standard=CakePHP app/path/to/something
 ```
 
 See also. [CakePHP coding standards](http://book.cakephp.org/2.0/en/contributing/cakephp-coding-conventions.html)

@@ -38,7 +38,7 @@ const EmailNotificationsSettingsForm = Form.extend('cipherguard.form.administrat
    * Check if Folders plugin is enabled
    * @returns {boolean|*|mixed}
    */
-  isFoldersPluginEnabled: function () {
+  isFoldersPluginEnabled: function() {
     const plugins = Config.read('server.cipherguard.plugins');
 
     return plugins && plugins.folders;
@@ -200,7 +200,7 @@ const EmailNotificationsSettingsForm = Form.extend('cipherguard.form.administrat
   /**
    * Init the Group Manager section
    */
-  _initFormFoldersSection: function () {
+  _initFormFoldersSection: function() {
     this.addElement(
       new ToggleButtonComponent('#js-send-folder-create-toggle-button', {
         label: __("When a folder is created, notify its creator."),

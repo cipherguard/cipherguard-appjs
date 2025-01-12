@@ -119,7 +119,7 @@ const GridContextualMenuComponent = ContextualMenuComponent.extend('cipherguard.
    * Check if MFA plugin is enabled
    * @returns {boolean|*|mixed}
    */
-  isMfaPluginEnabled() {
+  isMfaPluginEnabled: function() {
     const plugins = Config.read('server.cipherguard.plugins');
 
     return plugins && plugins.multiFactorAuthentication;

@@ -205,9 +205,9 @@ Resource.findAllByIds = function(resourcesIds) {
  * @return {Promise}
  */
 Resource.findByGroup = function(groupId) {
-  const contain = { favorite: 1, permission: 1, tag: 1 };
-  const filter = { 'is-shared-with-group': groupId };
-  return Resource.findAll({ contain, filter });
+  const contain = {favorite: 1, permission: 1, tag: 1};
+  const filter = {'is-shared-with-group': groupId};
+  return Resource.findAll({contain: contain, filter: filter});
 };
 
 /**
@@ -216,9 +216,9 @@ Resource.findByGroup = function(groupId) {
  * @return {Promise}
  */
 Resource.findByTag = function(tagId) {
-  const contain = { favorite: 1, permission: 1, tag: 1 };
-  const filter = { 'has-tag': tagId };
-  return Resource.findAll({ contain, filter });
+  const contain = {favorite: 1, permission: 1, tag: 1};
+  const filter = {'has-tag': tagId};
+  return Resource.findAll({contain: contain, filter: filter});
 };
 
 Resource.connection = connect([connectParse, connectDataUrl, connectConstructor, connectMap], {

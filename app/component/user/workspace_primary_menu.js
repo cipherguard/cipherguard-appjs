@@ -155,7 +155,7 @@ const WorkspacePrimaryMenu = Component.extend('cipherguard.component.user.Worksp
     this.reset();
   },
 
-  '{mad.bus.element} action_remove_mfa_settings_completed': function () {
+  '{mad.bus.element} action_remove_mfa_settings_completed': function() {
     this.userSelected();
   },
 

@@ -1,0 +1,2 @@
+<p>Are you sure you want to delete the tag <strong>{{tag.slug}}</strong>?</p>
+<p>Warning: Once the tag is deleted, it’ll be removed permanently and will not be recoverable.</p>

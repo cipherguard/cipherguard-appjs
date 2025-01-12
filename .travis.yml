@@ -1,0 +1,13 @@
+dist: xenial
+services:
+  - xvfb
+language: node_js
+node_js:
+  - "6"
+script: npm install && npm test
+addons:
+  firefox: "latest-esr"
+  # Install D-Bus here
+  apt:
+    packages:
+      - "dbus-x11"

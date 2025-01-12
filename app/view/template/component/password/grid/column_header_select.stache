@@ -1,0 +1,4 @@
+<div class="input checkbox">
+    <input type="checkbox" name="select all" id="js-passwords-select-all">
+    <label for="js-passwords-select-all">{{ __('select all') }}</label>
+</div>

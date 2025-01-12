@@ -1,0 +1,7 @@
+<div title="{{../mappedItem[name]}}">
+    {{#if(../mappedItem.safeUrl)}}
+    <a href="{{ ../mappedItem.safeUrl }}" target="_blank" rel="noopener">{{ ../mappedItem[name] }}</a>
+    {{#else}}
+        {{ ../mappedItem[name] }}
+    {{/if}}
+</div>

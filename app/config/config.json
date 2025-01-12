@@ -1,0 +1,30 @@
+{
+  "app": {
+	"controllerElt": "#js_app_controller",
+	"namespace": "cipherguard",
+	"ControllerClassName": "cipherguard.component.App"
+  },
+  "ui": {
+	"workspace": {
+	  "showSidebar": true
+	}
+  },
+  "notification": {
+	"timeout": 6000
+  },
+  "error": {
+	"ErrorHandlerClassName": "cipherguard.error.ErrorHandler"
+  },
+  "event": {
+	"eventBusControllerElt": "#js_bus_controller"
+  },
+  "secret": {
+	"generator": {
+	  "masks": ["alpha", "uppercase", "digit", "special"],
+	  "length": 13
+	}
+  },
+  "net": {
+	"ResponseHandlerClassName": "cipherguard.net.ResponseHandler"
+  }
+}

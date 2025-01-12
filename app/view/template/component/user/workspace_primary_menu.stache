@@ -1,0 +1,22 @@
+{{#if(isAdmin)}}
+<li>
+	<a id="js_user_wk_menu_edition_button" class="button">
+		<i class="fa fa-fw fa-edit"></i>
+		<span>{{ __('edit') }}</span>
+	</a>
+</li>
+<li>
+	<a id="js_user_wk_menu_deletion_button" class="button">
+		<i class="fa fa-fw fa-trash"></i>
+		<span>{{ __('delete') }}</span>
+	</a>
+</li>
+<li>
+	<div class="dropdown">
+		<a id="js_wk_menu_more_button" class="button">
+			<span>{{ __('more') }}</span>
+			<i class="fa fa-fw fa-caret-down"></i>
+		</a>
+	</div>
+</li>
+{{/if}}
